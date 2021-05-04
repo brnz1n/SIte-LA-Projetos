@@ -75,6 +75,7 @@ body {
   background-color: black;
   height: 30rem;
   width: 300rem;
+  
 }
 /*Muda a parte do video que ainda vai ser colocado*/
 .boxVideo p{
@@ -253,8 +254,6 @@ hr {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -1.5rem;
-  margin-left: -1.5rem;
 }
 
 
