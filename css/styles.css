@@ -85,6 +85,26 @@ body {
 }
 
 /*Mobile*/
+@media (min-width: 411px) { 
+    /*Muda a posição do slide em relação ao menu*/
+    .slide{
+      margin-top: 10rem;
+    }
+    
+    /*Muda o texto do slide posição*/
+    .textSlider h5{
+      font-size: 1.5rem;
+      color: var(--light);
+      text-align: center;
+    }
+    .textSlider p{
+      margin-bottom: 10%;
+      font-size: 1rem;
+      color: var(--light);
+      text-align: center;
+    }
+
+ }
 @media (min-width: 576px) { 
     /*Muda a posição do slide em relação ao menu*/
     .slide{
