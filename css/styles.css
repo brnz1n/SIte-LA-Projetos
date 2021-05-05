@@ -41,7 +41,7 @@ body {
   background-color: #fff;
 }
 
-
+/*animação de todo o site*/
 .animation {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
