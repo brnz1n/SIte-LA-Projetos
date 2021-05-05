@@ -99,12 +99,16 @@ body {
       text-align: center;
     }
     .textSlider p{
-      margin-bottom: 10%;
-      font-size: 1rem;
+      margin-bottom: -0.5rem;
+      font-size: 0.9rem;
       color: var(--light);
       text-align: center;
     }
-
+    .textSlider img {
+      height: 90px;
+      width: 90px;
+    }
+  
  }
 @media (min-width: 576px) { 
     /*Muda a posição do slide em relação ao menu*/
@@ -114,16 +118,19 @@ body {
     
     /*Muda o texto do slide posição*/
     .textSlider h5{
-      margin-bottom: 1%;
       font-size: 2rem;
       color: var(--light);
       text-align: center;
     }
     .textSlider p{
-      margin-bottom: 20%;
-      font-size: 1.5rem;
+      margin-bottom: 10%;
+      font-size: 1rem;
       color: var(--light);
       text-align: center;
+    }
+    .textSlider img {
+      height: 150px;
+      width: 150px;
     }
 
  }
@@ -131,23 +138,27 @@ body {
 
 @media (min-width: 768px) { 
     /*Muda a posição do slide em relação ao menu*/
-.slide{
-  margin-top: 10rem;
-}
+  .slide{
+    margin-top: 10rem;
+  }
 
-/*Muda o texto do slide posição*/
-.textSlider h5{
-  margin-bottom: 6%;
-  font-size: 4rem;
-  color: var(--light);
-  text-align: center;
-}
-.textSlider p{
-  margin-bottom: 20%;
-  font-size: 2rem;
-  color: var(--light);
-  text-align: center;
-}
+  /*Muda o texto do slide posição*/
+  .textSlider h5{
+    
+    font-size: 3rem;
+    color: var(--light);
+    text-align: center;
+  }
+  .textSlider p{
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+    color: var(--light);
+    text-align: center;
+  }
+  .textSlider img {
+    height: 200px;
+    width: 200px;
+  }
 
  }
 
@@ -160,16 +171,19 @@ body {
 
   /*Muda o texto do slide posição*/
   .textSlider h5{
-    margin-bottom: 5%;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--light);
     text-align: center;
   }
   .textSlider p{
     margin-bottom: 20%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--light);
     text-align: center;
+  }
+  .textSlider img {
+    height: 250px;
+    width: 250px;
   }
 
  }
@@ -184,16 +198,19 @@ body {
 
   /*Muda o texto do slide posição*/
   .textSlider h5{
-    margin-bottom: 1%;
     font-size: 4rem;
     color: var(--light);
     text-align: center;
   }
   .textSlider p{
-    margin-bottom: 10%;
-    font-size: 2rem;
+    margin-bottom: 20%;
+    font-size: 3rem;
     color: var(--light);
     text-align: center;
+  }
+  .textSlider img {
+    height: 400px;
+    width: 400px;
   }
 
 }
