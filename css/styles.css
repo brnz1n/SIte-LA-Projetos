@@ -118,6 +118,9 @@ body {
     height: 90px;
     width: 90px;
   }
+  .botttunDescubra{
+    background-color: var(--amareloLA);
+  }
 
 }
 @media (min-width: 411px) { 
@@ -141,6 +144,9 @@ body {
     .textSlider img {
       height: 90px;
       width: 90px;
+    }
+    .botttunDescubra{
+      background-color: var(--amareloLA);
     }
   
  }
