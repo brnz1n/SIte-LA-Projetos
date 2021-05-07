@@ -23,7 +23,7 @@
   <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
+<body class="bodyContato" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
     <div class="container">
@@ -40,17 +40,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger"
-              href="#fazemos">O que fazemos</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger"
-              href="#vantagem">Vantagem</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger"
-              href="#quemSomos">Quem Somos</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger"
-              href="#equipe">Equipe</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger"
-              href="#redeSociais">Redes Sociais</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger"
-              href="contato.html">Contato</a></li>
+              href="./index.html">Inicio</a></li>
         </ul>
       </div>
     </div>
@@ -60,13 +50,11 @@
 
 
   <!--Formulario de Contato-->
-  <section class="content">
-
-    <div class="container contato">
-
-      <h3>Formulario de contato</h3>
-
+  <section class="animar" id="modal">
+    <div class="form">
+      <h1 class="text-center">Formulario de contato</h1>
       <form class="form" method="POST" action="./php/enviar-email.php">
+
         <div class="form-group">
           <label>Nome Completo</label>
           <input class="form-control" name="nome" placeholder="Nome" type="text">
@@ -86,10 +74,12 @@
           <label>Insirar o seu CPF</label>
           <input class="form-control" name="cpf" placeholder="Insirar o seu CPF" type="text">
         </div>
+
         <div class="form-group">
           <label>Cidade</label>
           <input class="form-control" name="cidade" placeholder="Cidade" type="text">
         </div>
+
         <div class="form-group">
           <label>Estado</label>
           <input class="form-control" name="estado" placeholder="Estado" type="text">
@@ -116,12 +106,9 @@
             rows="5"></textarea>
         </div>
 
-        <input class="form-control" type="submit" value="Enviar">
-
+        <button class="form-control" type="submit" value="Enviar">Enviar</button>
       </form>
-
     </div>
-
   </section>
   <!--Formulario de Contato-->
 
