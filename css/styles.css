@@ -115,6 +115,8 @@ body {
 .textQuemSomos strong {
   color: var(--amareloLA);
 }
+/*Muda a cor do fundo do quem somos*/
+
 /*Card de Vantagem*/
 .card-title{
   color: var(--amareloLA);
@@ -122,17 +124,20 @@ body {
 .card-text{
   font-size: 1.3rem;
 }
-.card-img-top{
+.imgVantagens{
   filter: invert(100%)
 }
 .card{
   background: var(--black);
+ 
 }
 .card-deck{
   color: white;
   text-align: center;
   font: var(--font-family-sans-serif);
 }
+/*Card de Vantagem*/
+
 /*Muda a parte do video que ainda vai ser colocado*/
 .boxVideo{
   background-color: black;
@@ -5135,9 +5140,9 @@ h3 {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: #000000;
   border-radius: 1rem;
-  border-color: #2c3e50 !important;
+  border-color: #000000 !important;
 }
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
@@ -5146,7 +5151,7 @@ h3 {
   margin-left: 1rem;
 }
 .divider-custom .divider-custom-icon {
-  color: #2c3e50 !important;
+  color: #000000 !important;
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
@@ -5200,6 +5205,7 @@ h3 {
 #mainNav .navbar-nav li.nav-item a.nav-link {
   font-size: 0.85rem;
   color: var(--dark);
+  text-align: center;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: var(--amareloLA);
@@ -5211,8 +5217,8 @@ h3 {
   color: var(--amareloLA);
 }
 #mainNav .navbar-toggler {
-  font-size: 1.2rem;
-  padding: 0rem;
+  font-size: 1.9rem;
+  padding: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -5345,6 +5351,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .parceiros {
+  background-color: white;
   padding-top: 5rem;
   padding-bottom: 5rem;
   color:black;
