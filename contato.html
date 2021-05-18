@@ -51,65 +51,187 @@
   <!--Formulario de Contato-->
   <section class="animar" id="modal">
     <div class="form">
-      <h1 class="text-center">Formulario de contato</h1>
+      <h1 class="text-center">Formulário de contato</h1>
       <form class="form" method="POST" action="./php/enviar-email.php">
 
         <div class="form-group">
-          <label>Nome Completo</label>
-          <input class="form-control" name="nome" placeholder="Nome" type="text">
+          <label>Nome Completo*</label>
+          <input class="form-control" name="nome" placeholder="Digite seu nome" type="text" required name=nome>
         </div>
 
         <div class="form-group">
-          <label>Email</label>
-          <input class="form-control" name="email" placeholder="email" type="text">
+          <label>CPF*</label>
+          <input class="form-control" name="cpf" placeholder="Digite seu CPF" type="text" required name=cpf>
         </div>
 
         <div class="form-group">
-          <label>Celular (Whatapp)</label>
-          <input class="form-control" name="celular" placeholder="Celular (Whatapp)" type="t">
+          <label>Data de Nascimento*</label>
+          <input class="form-control" name="dataNascimento" placeholder="exemplo: 15/02/1900" type="text" required name=dataNascimento>
         </div>
 
         <div class="form-group">
-          <label>Insirar o seu CPF</label>
-          <input class="form-control" name="cpf" placeholder="Insirar o seu CPF" type="text">
+          <label>Email*</label>
+          <input class="form-control" name="email" placeholder="Digite o seu email" type="text" required name=email>
         </div>
 
         <div class="form-group">
-          <label>Cidade</label>
-          <input class="form-control" name="cidade" placeholder="Cidade" type="text">
+          <label>Telefone para contato*</label>
+          <input class="form-control" name="telefone" placeholder="Digite o seu numero de telefone" type="text" required name=telefone>
         </div>
 
         <div class="form-group">
-          <label>Estado</label>
-          <input class="form-control" name="estado" placeholder="Estado" type="text">
+          <label>Profissão*</label>
+          <input class="form-control" name="profissao" placeholder="Digite a sua profissão" type="text" required name=profissao>
         </div>
 
-
-        <label> Possui Terreno?</label>
+        <label>È casado(a)?</label>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="radiosTerreno" id="exampleRadios1" value="Sim" checked>
+          <input class="form-check-input" type="radio" name="radiosCasado" id="exampleRadios1" value="Sim" required name=casado>
           <label class="form-check-label" for="exampleRadios1">
             Sim
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="radiosTerreno" id="exampleRadios2" value="Não">
+          <input class="form-check-input" type="radio" name="radiosCasado" id="exampleRadios2" value="Não" required name=casado>
+          <label class="form-check-label" for="exampleRadios2">
+            Não
+          </label>
+        </div>
+
+
+        <div class="form-group">
+          <br>
+          <p>*Caso não, deixe as perguntas sobre o(a) parceiro(a) em branco.</p>
+          <label>Nome completo do(a) parceiro(a)</label>
+          <input class="form-control" name="nomeConjuge" placeholder="Digite o nome completo do(a) parceiro(a)"
+            type="text">
+        </div>
+
+        <div class="form-group">
+          <label>CPF do(a) parceiro(a)</label>
+          <input class="form-control" name="cpfConjuge" placeholder="Digite o CPF do(a) parceiro(a)" type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Data de nascimento do(a) parceiro(a)</label>
+          <input class="form-control" name="dataNascimentoConjugue" placeholder="exemplo: 15/02/1900" type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Profissão do(a) parceiro(a)</label>
+          <input class="form-control" name="profissaoConjuge" placeholder="Digite a profissão do(a) parceiro(a)"
+            type="text">
+        </div>
+
+
+        <div class="form-group">
+          <label>Renda Bruta Familiar (Mensal ou Anual)*</label>
+          <input class="form-control" name="renda"
+            placeholder="Digite a sua Renda Bruta Familiar e sinalize se é mensal ou anual" type="text" checked>
+        </div>
+
+        <div class="form-group">
+          <label>Local do imóvel onde deseja morar*</label>
+          <input class="form-control" name="localImovel" placeholder="Digite aqui o local do imóvel onde deseja morar"
+            type="text" required name=local>
+        </div>
+
+        <label>Possui 3 anos (somados) trabalhando sob regime de FGTS?*</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosFGTS" id="exampleRadios1" value="Sim" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosFGTS" id="exampleRadios2" value="Não" required name=FGTS>
           <label class="form-check-label" for="exampleRadios2">
             Não
           </label>
         </div>
 
         <div class="form-group">
-          <label>Soma da renda bruta Familiar</label>
-          <textarea class="form-control" name="mensagem" placeholder="Digite sua mensagem aqui" cols="30"
-            rows="5"></textarea>
+          <label>Número do PIS ou Valor na conta do FGTS (caso não possua deixar em branco)</label>
+          <input class="form-control" name="numeroPisValor" placeholder="Digite aqui o número ou valor" type="text">
         </div>
 
+        <label>Já foi beneficiado com imóvel ou objeto de financiamento com subsídio concedido pelo FGTS/UNIÃO?*</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosFGTSUNIAO" id="exampleRadios1" value="Sim" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosFGTSUNIAO" id="exampleRadios2" value="Não" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios2">
+            Não
+          </label>
+        </div>
+
+        <label>Existe mais de um comprador ou dependente na proposta?*</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosComprador" id="exampleRadios1" value="Sim" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosComprador" id="exampleRadios2" value="Não" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios2">
+            Não
+          </label>
+        </div>
+
+        <label>Você possui terreno próprio com RGI e gostaria de construir nele?*</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosRGI" id="exampleRadios1" value="Sim" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosRGI" id="exampleRadios2" value="Não" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios2">
+            Não
+          </label>
+        </div>
+
+        <label>Possui imóvel escriturado na região nas regiões limitrofes a sua atual residência ou local de
+          trabalho?*</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosEscritura" id="exampleRadios1" value="Sim" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosEscritura" id="exampleRadios2" value="Não" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios2">
+            Não
+          </label>
+        </div>
+
+        <label>Possui alguma restrição cadastral? (SPC, Serasa)*</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosRestricao" id="exampleRadios1" value="Sim" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radiosRestricao" id="exampleRadios2" value="Não" required name=FGTS>
+          <label class="form-check-label" for="exampleRadios2">
+            Não
+          </label>
+        </div>
+        <br>
         <button class="form-control" type="submit" value="Enviar">Enviar</button>
       </form>
     </div>
   </section>
   <!--Formulario de Contato-->
+
 
 
   <!-- Parceiros-->
@@ -120,14 +242,15 @@
         <div class="paceirosImg">
           <h1 class="text-uppercase mb-4">Parceiros</h1>
           <br>
-          <img class="animation" src="assets/img/parceiros/minhaCasaFinaciada.png" width="150px" height="150px" alt="">
+          <a href="https://www.minhacasafinanciada.com/">
+            <img class="animation" src="assets/img/parceiros/minhaCasaFinaciada.png" width="150px" height="150px"
+              alt="Imagem dos Paceiros">
+          </a>
         </div>
       </div>
     </div>
   </footer>
   <!-- Parceiros-->
-
-
 
   <!-- Footer-->
   <footer class="footer text-center">

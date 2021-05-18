@@ -58,7 +58,7 @@ body {
 }
 /*Pagina de Contatos*/
 .bodyContato{
-  background-image: url("../assets/img/portfolio/slide1.jpg");
+  background: var(--black);
   position: relative;
   
   background-attachment: fixed;
@@ -71,8 +71,8 @@ body {
   background: white;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  margin: 200px auto 100px;
+  max-width: 80rem;
+  margin: 12rem auto 12rem;
   background: rgb(241, 241, 241);
 }
 #modal input{
