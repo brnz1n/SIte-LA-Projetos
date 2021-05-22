@@ -30,39 +30,133 @@
 
   //Compo E-mail
   $arquivo = "
-    <html>
-      <p><b>Nome Completo: </b>$nome</p>
-      <p><b>CPF: </b>$cpf</p>
-      <p><b>Data de Nascimento: </b>$dataNascimento</p>
-      <p><b>Email: </b>$email</p>
-      <p><b>Telefone para contato: </b>$telefone</p>
-      <p><b>Profissão: </b>$profissao</p>
-      <p><b>È casado(a)? </b>$radiosCasado</p>
-      <p><b>Nome completo do(a) parceiro(a): </b>$nomeConjuge</p>
-      <p><b>CPF do(a) parceiro(a): </b>$cpfConjuge</p>
-      <p><b>Data de nascimento do(a) parceiro(a): </b>$dataNascimentoConjugue</p>
-      <p><b>Profissão do(a) parceiro(a): </b>$profissaoConjuge</p>
-      <p><b>Renda Bruta Familiar (Mensal ou Anual): </b>$renda</p>
-      <p><b>Local do imóvel onde deseja morar: </b>$localImovel</p>
-      <p><b>Possui 3 anos (somados) trabalhando sob regime de FGTS?: </b>$radiosFGTS</p>
-      <p><b>Número do PIS ou Valor na conta do FGTS (caso não possua deixar em branco): </b>$numeroPisValor</p>
-      <p><b>Já foi beneficiado com imóvel ou objeto de financiamento com subsídio concedido pelo FGTS/UNIÃO?: </b>$radiosFGTSUNIAO</p>
-      <p><b>Existe mais de um comprador ou dependente na proposta?: </b>$radiosComprador</p>
-      <p><b>Você possui terreno próprio com RGI e gostaria de construir nele?: </b>$radiosRGI</p>
-      <p><b>Possui imóvel escriturado na região nas regiões limitrofes a sua atual residência ou local de trabalho?: </b>$radiosEscritura</p>
-      <p><b>Possui alguma restrição cadastral? (SPC, Serasa): </b>$radiosRestricao</p>
-      
-      <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
-    </html>
+  <html>
+  
+  <style>
+    table{
+      width: 90%;
+      margin: 2rem auto 5rem;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse:collapse;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    th{
+      font-size: 1.1rem;
+      background-color: #222831;
+      color: white;
+    }
+    td{
+      font-size: 1rem;
+      color: #271e0f;
+      background-color: #8a8a8a21;
+    }
+    </style>
+    
+    <body>
+    <table>
+      <tr>
+        <th>Nome Completo</th>
+        <th>CPF</th>
+      </tr>
+      <tr>
+        <td>$nome</td>
+        <td>$cpf</td>
+      </tr>
+      <tr>
+        <th>Data de nascimento</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>$dataNascimento</td>
+        <td>$email</td>
+      </tr>
+      <tr>
+        <th>Telefone para contato</th>
+        <th>Profissão</th>
+      </tr>
+      <tr>
+        
+        <td>$telefone</td>
+        <td>$profissao</td>
+      </tr>
+      <tr>
+        <th>È casado(a)?</th>
+        <th>Nome completo do(a) parceiro(a)</th>
+      </tr>
+      <tr>
+        <td>$radiosCasado</td>
+        <td>$nomeConjuge</td>
+      </tr>
+      <tr>
+        <th>Data de nascimento do(a) parceiro(a)</th>
+        <th>Profissão do(a) parceiro(a)</th>
+      </tr>
+      <tr>
+        <td>$dataNascimentoConjugue</td>
+        <td>$profissaoConjuge</td>
+      </tr>
+      <tr>
+        <th>Renda Bruta Familiar (Mensal ou Anual)</th>
+        <th>Local do imóvel onde deseja morar</th>
+      </tr>
+      <tr>
+        <td>$renda</td>
+        <td>$localImovel</td>
+      </tr>
+      <tr>
+        <th>Possui 3 anos (somados) trabalhando sob regime de FGTS?</th>
+        <th>Número do PIS ou Valor na conta do FGTS?</th>
+      </tr>
+      <tr>
+        <td>$radiosFGTS</td>
+        <td>$numeroPisValor</td>
+      </tr>
+      <tr>
+        <th>Já foi beneficiado com imóvel ou objeto de financiamento com subsídio concedido pelo FGTS/UNIÃO?</th>
+        <th>Existe mais de um comprador ou dependente na proposta?</th>
+      </tr>
+      <tr>
+        <td>$radiosFGTSUNIAO</td>
+        <td>$radiosComprador</td>
+      </tr>
+      <tr>
+        <th>Você possui terreno próprio com RGI e gostaria de construir nele?</th>
+        <th>Possui imóvel escriturado na região nas regiões limitrofes a sua atual residência ou local de trabalho?</th>
+      </tr>
+      <tr>
+        <td>$radiosRGI</td>
+        <td>$radiosEscritura</td>
+      </tr>
+      <tr>
+        <th>Possui alguma restrição cadastral? (SPC, Serasa)</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>$radiosRestricao</td>
+        <td></td>
+      </tr>
+  
+    </table>
+    <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+  </body>
+  
+  </html>
+  
   ";
   
   //Emails para quem será enviado o formulário
-  $destino = "brnnz1n@gmail.com";
-  $assunto = "Contato pelo Site";
+  $destino = "brendo@laconstrutech.com";
+  $assunto = "Contato por laconstrutech.com";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
   $headers  = "MIME-Version: 1.0\n";
-  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+  $headers .= 'Content-Type: text/html; utf-8';
   $headers .= "From: $nome <$email>";
 
   //Enviar
