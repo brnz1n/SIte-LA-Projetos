@@ -190,7 +190,7 @@ body {
 @media (min-width: 411px) { 
     /*Muda a posição do slide em relação ao menu*/
     .slide{
-      margin-top: 8rem;
+      margin-top: 7rem;
     }
     
     /*Muda o texto do slide posição*/
@@ -201,13 +201,13 @@ body {
     }
     .textSlider p{
       margin-bottom: -0.5rem;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: var(--light);
       text-align: center;
     }
     .textSlider img {
-      height: 90px;
-      width: 90px;
+      height: 125px;
+      width: 125px;
     }
     .botttunDescubra{
       background-color: var(--amareloLA);
@@ -217,7 +217,7 @@ body {
 @media (min-width: 576px) { 
     /*Muda a posição do slide em relação ao menu*/
     .slide{
-      margin-top: 8rem;
+      margin-top: 7rem;
     }
     
     /*Muda o texto do slide posição*/
@@ -236,7 +236,7 @@ body {
       width: 150px;
     }
     .botttunDescubra{
-      margin-bottom: 4rem;
+      margin-bottom: 2%;
       width: 200px;
       height: 40px;
       background-color: var(--amareloLA);
@@ -251,7 +251,7 @@ body {
 @media (min-width: 768px) { 
     /*Muda a posição do slide em relação ao menu*/
   .slide{
-    margin-top: 8rem;
+    margin-top: 7rem;
   }
 
   /*Muda o texto do slide posição*/
@@ -297,11 +297,11 @@ body {
     text-align: center;
   }
   .textSlider img {
-    height: 250px;
-    width: 250px;
+    height: 270px;
+    width: 270px;
   }
   .botttunDescubra{
-    margin-bottom: 6rem;
+    margin-bottom: 10%;
     width: 200px;
     height: 40px;
   }
@@ -318,22 +318,23 @@ body {
 
   /*Muda o texto do slide posição*/
   .textSlider h5{
-    font-size: 4rem;
+    font-size: 1rem;
     color: var(--light);
     text-align: center;
   }
   .textSlider p{
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--light);
     text-align: center;
   }
   .textSlider img {
+    
     height: 400px;
     width: 400px;
   }
   .botttunDescubra{
-    margin-bottom: 20rem;
+    margin-bottom: 12%;
     width: 200px;
     height: 40px;
   }
