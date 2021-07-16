@@ -21,9 +21,23 @@
   $radiosEscritura = $_POST['radiosEscritura'];
   $radiosRestricao = $_POST['radiosRestricao'];
 
+  $dataNascimentoInvetida = inverteData($dataNascimento);
+  function inverteData($dataNascimento){
+    if(count(explode("/",$dataNascimento)) > 1){
+        return implode("-",array_reverse(explode("/",$dataNascimento)));
+    }elseif(count(explode("-",$dataNascimento)) > 1){
+        return implode("/",array_reverse(explode("-",$dataNascimento)));
+    }
+  };
 
-
-
+  $dataNascimentoConjugueInvetida = inverteDataConjugue($dataNascimentoConjugue);
+  function inverteDataConjugue($dataNascimentoConjugue){
+    if(count(explode("/",$dataNascimentoConjugue)) > 1){
+        return implode("-",array_reverse(explode("/",$dataNascimentoConjugue)));
+    }elseif(count(explode("-",$dataNascimentoConjugue)) > 1){
+        return implode("/",array_reverse(explode("-",$dataNascimentoConjugue)));
+    }
+  };
 
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
@@ -73,7 +87,7 @@
         <th>Email</th>
       </tr>
       <tr>
-        <td>$dataNascimento</td>
+        <td>$dataNascimentoInvetida</td>
         <td>$email</td>
       </tr>
       <tr>
@@ -98,7 +112,7 @@
         <th>Profissão do(a) parceiro(a)</th>
       </tr>
       <tr>
-        <td>$dataNascimentoConjugue</td>
+        <td>$dataNascimentoConjugueInvetida</td>
         <td>$profissaoConjuge</td>
       </tr>
       <tr>
@@ -151,7 +165,7 @@
   ";
   
   //Emails para quem será enviado o formulário
-  $destino = "brendo@laconstrutech.com";
+  $destino = "contato@laconstrutech.com";
   $assunto = "Contato por laconstrutech.com";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
