@@ -21,6 +21,7 @@
     type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
+  <script src="js.js"></script>
 
 
 
@@ -133,11 +134,10 @@
             type="text">
         </div>
 
-
         <div class="form-group">
           <label>Renda Bruta Familiar (Mensal ou Anual)*</label>
           <input class="form-control" name="renda"
-            placeholder="Digite a sua Renda Bruta Familiar e sinalize se é mensal ou anual" type="text"  checked>
+            placeholder="Digite a sua Renda Bruta Familiar" type="text" onKeyUp="mascaraMoeda(this, event)"  checked>
         </div>
 
         <div class="form-group">
